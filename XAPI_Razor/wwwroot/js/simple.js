@@ -1,6 +1,0 @@
-﻿function getStudentName() {
-
-    return "Pavan";
-
-}
-

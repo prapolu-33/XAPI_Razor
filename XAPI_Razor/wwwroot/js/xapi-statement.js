@@ -1,7 +1,7 @@
 ﻿function sendStatement( Name, Email, verb, verbId, object, objectId) {
         const conf = {
-            "endpoint": "https://localhost:7271/api/xapi/",
-            "auth": "Basic " + toBase64("prapolu:password")
+            "endpoint": "https://hosturl/api/xapi/",
+            "auth": "Basic " + toBase64("uName:password")
         }
     ADL.XAPIWrapper.changeConfig(conf);
     const statement = {
