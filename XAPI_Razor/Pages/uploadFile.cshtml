@@ -1,0 +1,21 @@
+@page
+@model XAPI_Razor.Pages.uploadFileModel
+@{
+    ViewData["Title"] = "uploadFile";
+}
+
+<h1>uploadFile</h1>
+
+<div class="container">
+    <div class="mb-3 mt-3">
+        <form method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label class="form-label">Upload File</label>
+                <input type="file" name="file" class="form-control">
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary">Upload</button>
+            </div>
+        </form>
+    </div>
+</div>

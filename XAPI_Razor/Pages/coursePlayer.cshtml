@@ -1,0 +1,37 @@
+@page
+@model XAPI_Razor.Pages.coursePlayerModel
+@{
+    ViewData["Title"] = "coursePlayer";
+}
+
+<h1>coursePlayer</h1>
+
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>SCORM Player</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="/js/xapi-statement.js"></script>
+    <script type="text/javascript" src="/js/xapiwrapper.min.js"></script>
+    <script type="text/javascript" src="/js/alertTest.js"></script>
+    <script type="text/javascript" src="/js/simple.js"></script>
+    @* <script src="/js/test.js"></script> *@
+</head>
+<body>
+    <div id="SCO1">
+        @*<iframe id="iframe1" src="@Model.sIframeSrc" style="width: 1440px; height: 775px; border: 0;"></iframe>*@
+        @*<iframe id="iframe1" src="https://sco.ilkms.net/scormscos/Clinical%20Compliance%20Fundamentals%20Section%201/index_lms.html" style="width: 1440px; height: 775px; border: 0;"></iframe>*@
+        <iframe id="iframe1" src="xapiCourses/Basic_Course/index.html" style="width: 1440px; height: 775px; border: 0;"></iframe>
+        @*<button onclick="showAlert()">show Alert</button>*@
+    </div>
+    <div id="divDebug"></div>
+   
+</body>
+</html>
+
